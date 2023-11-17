@@ -1,0 +1,1130 @@
+/* Aspectos generales */
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Miltonian+Tattoo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Dancing+Script:wght@600&family=Inter:wght@300&family=Italianno&family=Josefin+Sans:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+:root {
+    --principal-color: #100C0C;
+    --segundario-color: #FFFFFF;
+    --terceario-color: #FFFFFF;
+    --titulo-size: 60px;
+    --subtitulo-size: 40px;
+    --parrafos-size: 20px;
+}
+
+html{
+    font-size: 16px;
+}
+
+/* ====== Estilos del nav ====== */
+nav {
+    position: fixed !important;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+/* ====== Estilos para la pagina en general con color y fondo ====== */
+body {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    background-image: linear-gradient(180deg, #000000 0, #000000 25%);
+}
+
+
+/* ====== Estilos para el home ====== */
+
+#home {
+    font-family: 'monsertat';
+}
+
+#home h1,h2,h3,h4,h5,h6 {
+    font-family: 'Inter', sans-serif;
+}
+
+#home .logo {
+    font-family: 'metal mania';
+}
+
+#home a {
+    font-family: 'Inter', sans-serif;
+}
+
+#home .bg-portafolio {
+    background-color: transparent;
+}
+
+#home .bg-portafolio .nav-link {
+    color: white;
+    font-size: 20px;
+    margin: 10px;
+}
+
+#home .bg-portafolio .nav-link:hover {
+    color: orange;
+    border-bottom: 2px solid orange;
+}
+
+#home .navbar-brand {
+    color: white;
+    font-size: 30px;
+}
+#home .nave *{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+#home .nave .logo {
+    color: white;
+    font-family: 'metal mania';
+    font-size: 50px;
+    padding: 20px 300px;
+}
+
+#home .nave .logo{
+    height: 40px;
+}
+
+#home .nave  ul{
+    float: right;
+    margin-right: 20px;
+}
+#home .nave  ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+#home .nave  ul li a{
+    color: #fff;
+    font-size: 18px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+#home .nave li a.active, li a:hover{
+    background: orange;
+    transition: .5s;
+}
+#home .nave .checkbtn{
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#home .nave #check{
+    display: none;
+}
+
+#home .nave section{
+    background: url(fondo.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: calc(100vh - 80px);
+}
+
+@media screen and (min-width: 400px) and (max-width: 700px) {
+    #home .nave .enlace{
+        padding-left: 10px;
+    }
+    #home .nave  ul li a{
+        font-size: 16px;
+    }
+
+    #home .nave .checkbtn{
+        display: block;
+    }
+    #home .nave ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #000000;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    #home .nave  ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    #home .nave nav ul li a{
+        font-size: 20px;
+    }
+    #home .nave li a:hover, li a.active{
+        background: none;
+        color: orange;
+    }
+    #home .nave #check:checked ~ ul{
+        left:0;
+    }
+
+    #home .nave .logo {
+    color: white;
+    font-family: 'metal mania';
+    font-size: 30px;
+    padding: 20px 30px;
+    }
+
+    nav {
+        width: 95%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 900px) {
+    #home .nave .enlace{
+        padding-left: 20px;
+    }
+    #home .nave  ul li a{
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 900px) {
+    #home .nave .checkbtn{
+        display: block;
+    }
+    #home .nave ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #000000;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    #home .nave  ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    #home .nave nav ul li a{
+        font-size: 20px;
+    }
+    #home .nave li a:hover, li a.active{
+        background: none;
+        color: orange;
+    }
+    #home .nave #check:checked ~ ul{
+        left:0;
+    }
+
+    #home .nave .logo {
+    color: white;
+    font-family: 'metal mania';
+    font-size: 50px;
+    padding: 20px 30px;
+    }
+}
+
+#home #hero {
+    color: white;
+    text-align: center;
+    padding: 5% 0;
+    font-size: 100%;
+}
+
+#home #hero h2 {
+    color: var(--secundario-color);
+    font-size: 80px;
+    font-family: 'Roboto Slab', serif;
+    padding: 80px 0 0 0;
+    & span {
+        font-family: 'Roboto Slab', serif;
+        font-style: normal;
+        font-size: 12rem;
+        font-weight: 700;
+    }
+}
+
+@media screen and (min-width: 400px) and (max-width: 700px) {
+    #home #hero h2 {
+        color: var(--secundario-color);
+        font-size: 80px;
+        font-family: 'Roboto Slab', serif;
+        padding: 80px 0 0 0;
+        & span {
+            font-family: 'Roboto Slab', serif;
+            font-style: normal;
+            font-size: 8rem;
+            font-weight: 700;
+        }
+    }
+}
+
+#home #hero button {
+    background-color: transparent;
+}
+
+#home button {
+    color: #fff;
+    border: none;
+    position: relative;
+    height: 60px;
+    font-size: 1.6em;
+    padding: 0 2em;
+    cursor: pointer;
+    transition: 800ms ease all;
+    outline: none;
+}
+
+#home button:hover {
+    background: #fff;
+    color: rgb(255, 255, 255);
+}
+
+#home button:before,
+button:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 5px;
+    width: 0;
+    background: orange;
+    transition: 400ms ease all;
+}
+
+#home button:after {
+    right: inherit;
+    top: inherit;
+    left: 0;
+    bottom: 0;
+}
+
+#home button:hover:before,
+button:hover:after {
+    width: 100%;
+    transition: 800ms ease all;
+}
+
+#home #hero h1 {
+    border-bottom: 2px solid rgb(243, 243, 243);
+    width: 40%;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+#home #yo h2 {
+    color: white;
+    font-family: 'metal mania';
+    padding: 130px 250px;
+    font-size: 50px;
+}
+
+/* ==== RESPONSIVE PARA EL HOME ===== */
+
+@media screen and (min-width: 768px) and (max-width: 900px) {
+    #home #hero h2 {
+        font-size: 60px; 
+    }
+
+    #home #hero button {
+        font-size: 1.2em; 
+        padding: 0.5em 1em; 
+    }
+
+    #home #yo h2 {
+        padding: 175px 43px;
+    }
+
+    #home #hero h2 & span {
+        font-size: 8rem;
+    }
+
+}
+
+@media screen and (min-width: 400px) and (max-width: 700px) {
+    #home #hero h2 {
+        font-size: 40px; 
+        padding: 40px 0 0 0;
+    }
+
+    #home #hero button {
+        font-size: 1.2em; 
+        padding: 0.5em 1em; 
+    }
+
+    #home #yo h2 {
+        padding: 175px 43px;
+    }
+
+    #home span {
+        font-size: 8rem;
+    }
+}
+
+/* ====== Estilos para el perfil ====== */
+
+#sobreMi * {
+    font-family: 'monsertat';
+}
+
+#sobreMi h1,h2,h3,h4,h5,h6 {
+    font-family: 'Inter', sans-serif;
+}
+
+#sobreMi .logo {
+    font-family: 'metal mania';
+}
+
+#sobreMi a {
+    font-family: 'Inter', sans-serif;
+}
+
+#sobreMi {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    
+    background: linear-gradient(rgb(33, 33, 33), rgb(56, 55, 55), black);
+}
+
+#sobreMi .bg-portafolio {
+    background-color: transparent;
+}
+
+#sobreMi .bg-portafolio .nav-link {
+    color: white;
+    font-size: 20px;
+    margin: 10px;
+}
+
+#sobreMi .bg-portafolio .nav-link:hover {
+    color: aqua;
+}
+
+#sobreMi .navbar-brand {
+    color: white;
+    font-size: 30px;
+}
+
+#sobreMi #hero {
+    color: white;
+    text-align: center;
+    padding: 5% 0;
+    font-size: 100%;
+}
+
+#sobreMi #imagen1 img {
+    width: 427px;
+    float: right;
+}
+
+#sobreMi #imagen1 p {
+    padding: 2% 5%;
+    color: white;
+    font-size: 50px;
+}
+
+#sobreMi #imagen1 h2 {
+    padding: 4% 5%;
+    color: white;
+    font-size: 50px;
+}
+
+#AboutMe {
+    width: 100%;
+    position: relative;
+}
+
+#AboutMe h1 {
+    color: rgb(255, 255, 255);
+    padding-top: 100px;
+    font-size: 50px;
+    font-family: 'Inter', sans-serif;
+    width: 100%;
+    margin: 20px;
+    padding: 100px 0px 10px;
+}
+
+#AboutMe h1::before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 8%;
+    background: orange;
+    left: 16%;
+}
+
+#AboutMe p {
+    color: rgb(255, 255, 255);
+    font-family: 'Inter', sans-serif;
+    width: 100%;
+    font-size: 40px;
+    padding: 50px 0;
+}
+
+#AboutMe .imagen2 {
+    height: 600px;
+    position: absolute;
+    bottom: 120px;
+}
+
+#AboutMe .sociales {
+    padding: 10px;
+}
+
+#AboutMe #yo h2 {
+    color: white;
+    font-family: 'metal mania';
+    font-size: 50px;
+}
+
+#sobreMi #AboutMe .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#sobreMi #AboutMe .col-lg-6 {
+    width: 48%; 
+}
+
+#sobreMi #AboutMe h1 {
+    padding-top: 100px;
+    font-size: 50px;
+    width: 70%;
+    font-family: 'Roboto Slab', serif; 
+}
+
+#sobreMi #AboutMe h1::before {
+    left: 15%; 
+}
+
+#sobreMi #AboutMe .imagen2 {
+    height: auto; 
+    max-width: 250%; 
+    position: relative;
+    bottom: auto;
+    margin-top: 20px; 
+}
+
+/* ==== RESPONSIVE PARA SOBRE MI ==== */
+
+@media screen and (min-width: 768px) and (max-width: 900px) {
+    
+    #sobreMi #AboutMe .row {
+        flex-direction: column; 
+        align-items: stretch;
+    }
+
+    #sobreMi #AboutMe .col-lg-6 {
+        width: 100%; 
+        margin-bottom: 20px; 
+    }
+
+    #sobreMi #AboutMe h1 {
+        width: 100%; 
+        text-align: center; 
+    }
+
+    #sobreMi #AboutMe h1::before {
+        left: 38%; 
+        transform: translateX(-50%);
+    }
+
+    #sobreMi #AboutMe .imagen2 {
+        margin-top: -500px;
+        height: 300px;
+        left: 150px;
+        
+    }
+}
+
+@media screen and (min-width: 400px) and (max-width: 700px) {
+    #sobreMi #AboutMe .row {
+        flex-direction: column; 
+        align-items: stretch;
+    }
+
+    #sobreMi #AboutMe .col-lg-6 {
+        width: 100%; 
+        margin-bottom: 20px; 
+    }
+
+    #sobreMi #AboutMe h1 {
+        width: 100%; 
+        text-align: center; 
+    }
+
+    #sobreMi #AboutMe h1::before {
+        left: 30%; 
+        transform: translateX(-50%);
+    }
+
+    #sobreMi #AboutMe .imagen2 {
+        margin-top: -400px;
+        height: 300px;
+        left: 100px;
+    }
+
+    #AboutMe p {
+        text-align: center;
+        width: 103%;
+        font-size: 24px;
+    }
+}
+
+
+/* ====== Estilos para los estudios ====== */
+
+#Estudios {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    text-align: center;
+    background: #000000;
+}
+
+#Estudios .container {
+    padding: 10px 50px;
+    position: relative;
+    width: 50%;
+}
+
+#Estudios .text-box {
+    background: transparent;
+    position: relative;
+    border-radius: 6px;
+    font-size: 50px;
+    color: white;
+}
+
+#Estudios .left-container {
+    right: 400px;
+    text-align: center;
+}
+
+#Estudios .rigth-container {
+    left: 400px;
+    text-align: center; 
+}
+
+#Estudios::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 70%;
+    background: white;
+    top: 180px;
+    margin-left: -3px;
+}
+
+#Estudios h2 {
+    color: #f6f6f6;
+    font-size: 50px;
+    display: inline-block;
+    padding: 100px;
+    font-family: 'Roboto Slab', serif;
+}
+
+@media screen and (min-width: 768px) and (max-width: 900px) {
+    #Estudios .left-container {
+        right: 187px;
+    }
+
+    #Estudios p {
+        font-size: 30px;
+    }
+
+    #Estudios .rigth-container {
+        left: 164px;
+    }
+}
+
+@media screen and (min-width: 400px) and (max-width: 700px) {
+    #Estudios .left-container {
+        right: 148px;
+    }
+
+    #Estudios p {
+        font-size: 30px;
+    }
+
+    #Estudios .rigth-container {
+        left: 138px;
+    }
+
+    #Estudios::after {
+        height: 83%;
+    }
+}
+    
+/* ====== Estilos para el proyecto ====== */
+
+#proyectos {
+    font-family: 'monsertat';
+}
+
+#proyectos h1,h2,h3,h4,h5,h6 {
+    font-family: 'Roboto Slab', serif;
+}
+
+#proyectos a {
+    font-family: 'Inter', sans-serif;
+}
+
+#proyectos {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    background-image: url(../img/Proyectos.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#proyecto {
+    width: 100%;
+    position: relative;
+}
+
+#proyecto h1 {
+    color: white;
+    padding-top: 100px;
+    font-size: 50px;
+    display: inline-block;
+    margin-bottom: 40px;
+    font-family: 'Roboto Slab', serif;
+    width: 100%;
+    margin: 20px;
+}
+
+#proyecto h1::before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 8%;
+    background: orange;
+    left: 16%;
+}
+
+#proyecto p {
+    color: rgb(255, 255, 255);
+    font-family: 'Inter', sans-serif;
+    width: 100%;
+    font-size: 40px;
+    padding: 50px 0;
+}
+
+/* ==== Responsive para proyecto ====*/
+
+@media screen and (min-width: 768px) and (max-width: 900px) {
+    #proyectos {
+        min-height: auto; 
+    }
+
+    #proyecto h1 {
+        font-size: 40px; 
+    }
+
+    #proyecto h1::before {
+        width: 1px; 
+        height: 5%; 
+        left: 6%; 
+    }
+
+    #proyecto p {
+        font-size: 30px; 
+        padding: 30px 0; 
+    }
+
+}
+
+@media screen and (min-width: 400px) and (max-width: 700px) {
+    #proyectos {
+        min-height: auto; 
+    }
+
+    #proyecto h1 {
+        font-size: 40px; 
+    }
+
+    #proyecto h1::before {
+        width: 1px; 
+        height: 5%; 
+        left: 6%; 
+    }
+
+    #proyecto p {
+        font-size: 30px; 
+        padding: 30px 0; 
+    }
+
+    #proyecto img {
+        height: 300px;
+        padding: 4px 38px;
+    }
+}
+
+/* ====== Inicio de la pagina de experiencia ====== */
+
+#experiencia {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+}
+
+#experiencia h1 {
+    color: rgb(255, 255, 255);
+    padding-top: 100px;
+    font-size: 60px;
+    display: inline-block;
+    margin-bottom: 40px;
+    font-family: 'Roboto Slab', serif;
+    width: 100%;
+    margin: 20px;
+}
+
+#experiencia h1::before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 10%;
+    background: orange;
+    left: 1%;
+}
+
+#experiencia .abai {
+    width: 400px;
+}
+
+#experiencia p {
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    font-family: 'Inter', sans-serif;
+}
+
+@media screen and (min-width: 400px) and (max-width: 700px) {
+    #experiencia .abai {
+        width: 323px;
+    }
+
+    #experiencia p {
+        font-size: 24px;
+    }
+
+    #experiencia {
+    min-height: 64vh;
+    }   
+}
+
+/* ====== Seccion para habilidades ====== */
+
+#Habilidades {
+    width: 100%;
+    padding: 100px 0;
+    background-image: url(../img/habilidadesa.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#Habilidades h5 {
+    color: white;
+    font-size: 100px;
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+}
+
+/* ====== Cartas de las habilidades  ====== */
+
+#Habilidades .my-tech-card {
+    margin: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    background: #D7A013;
+    width: 500px;
+    border-radius: 1rem;
+    padding: 0 1rem;
+    left: 100%;
+
+    & .tech {
+        background-color: transparent;
+        padding: 1rem;
+        border-radius: 10px;
+
+        & img {
+            border: none;
+            border-radius: 10px;
+            width: 60px;
+        }
+    }
+
+    & .content {
+        
+        color: black;
+        text-align: center;
+        padding: 10px;
+    }
+
+}
+
+#Habilidades .cartas {
+    display: flex;
+    justify-content: center;
+    grid-column: auto;
+}
+
+/* ==== Responsive para habilidades */
+
+@media screen and (min-width: 768px) and (max-width: 900px) {
+    #Habilidades h5 {
+        font-size: 60px; 
+    }
+    
+    #Habilidades .my-tech-card {
+        width: calc(50% - 40px); /* Divide en dos columnas con un margen entre ellas */
+    }
+
+    #Habilidades {
+        width: 100%;
+        padding: 100px 0;
+        background-image: url(../img/habilidadesa.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    
+    #Habilidades h5 {
+        color: white;
+        font-size: 100px;
+        text-align: center;
+    }
+    
+    /* Cartas de habilidades */
+    #Habilidades .my-tech-card {
+        margin: 20px; 
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        color: #fff;
+        background: #D7A013;
+        width: 46%; 
+        border-radius: 1rem;
+        padding: 1rem;
+    
+        & .tech {
+            background-color: transparent;
+            padding: 1rem;
+            border-radius: 10px;
+    
+            & img {
+                border: none;
+                border-radius: 10px;
+                width: 60px;
+            }
+        }
+    
+        & .content {
+            color: black;
+            text-align: center;
+            padding: 10px;
+        }
+    }
+    
+    #Habilidades .cartas {
+        display: flex;
+        flex-wrap: wrap; 
+        justify-content: center;
+    } 
+
+}
+
+@media screen and (min-width: 400px) and (max-width: 700px) {
+    #Habilidades h5 {
+        font-size: 60px; 
+    }
+    
+    #Habilidades .my-tech-card {
+        width: calc(50% - 40px); 
+    }
+
+    #Habilidades {
+        width: 100%;
+        padding: 100px 0;
+        background-image: url(../img/habilidadesa.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    
+    #Habilidades h5 {
+        color: white;
+        font-size: 70px;
+        text-align: center;
+    }
+    
+    /* Cartas de habilidades */
+    #Habilidades .my-tech-card {
+        margin: 20px; 
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        color: #fff;
+        background: #D7A013;
+        width: 46%; 
+        border-radius: 1rem;
+        padding: 1rem;
+    
+        & .tech {
+            background-color: transparent;
+            padding: 1rem;
+            border-radius: 10px;
+    
+            & img {
+                border: none;
+                border-radius: 10px;
+                width: 60px;
+            }
+        }
+    
+        & .content {
+            color: black;
+            text-align: center;
+            padding: 10px;
+        }
+    }
+    
+    #Habilidades .cartas {
+        display: flex;
+        flex-wrap: wrap; 
+        justify-content: center;
+    } 
+}
+
+/* ====== Seccion para el contacto ====== ======*/
+
+#Contacto #hero {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 5% 0;
+    font-size: 100%;
+    
+}
+
+#Contacto #hero h2 {
+    color: white;
+    font-size: 100px;
+    font-family: 'Roboto Slab', serif;
+}
+
+#Contacto #hero button {
+    background-color: transparent;
+}
+
+#Contacto button {
+    background: #1AAB8A;
+    color: #fff;
+    border: none;
+    position: relative;
+    height: 60px;
+    font-size: 1.6em;
+    padding: 0 2em;
+    cursor: pointer;
+    transition: 800ms ease all;
+    outline: none;
+}
+
+#Contacto button:hover {
+    background: #fff;
+    color: rgb(255, 255, 255);
+}
+
+#Contacto button:before,
+button:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 5px;
+    width: 0;
+    background: rgb(255, 255, 255);
+    transition: 400ms ease all;
+}
+
+#Contacto button:after {
+    right: inherit;
+    top: inherit;
+    left: 0;
+    bottom: 0;
+}
+
+#Contacto button:hover:before,
+button:hover:after {
+    width: 100%;
+    transition: 800ms ease all;
+}
+
+@media screen and (min-width: 400px) and (max-width: 700px) {
+    #Contacto #hero h2 {
+        font-size: 52px;
+    }
+}
+/* ====== Seccion de las redes ====== */
+
+.redes-sociales {
+    background: var(--cuarto-color);
+    color: white;
+    padding: 50px;
+    text-align: center;
+    letter-spacing: 20px;
+
+    >p {
+        padding: 10px 0 20px 0;
+    }
+
+}
+
+footer {
+    background-color: black;
+    color: white;
+}
+
+.redes-sociales img {
+    height: 50%;
+    width: 50px;
+}
+
+.span-color {
+    color: orange;
+}
+
+::selection {
+    background-color: orange;
+    color: white;
+    cursor: crosshair;
+}
+
+/* === Estilos para el boton de subir */
+
+.scrollTop {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    padding: 10px 15px;
+    background: white;
+    color: #fff;
+    border-radius: 5px;
+    border-radius: 1px solid #fff;
+    cursor: pointer;
+    transition: all 0.5s ease 0s;
+}
+
+@media screen and (min-width: 400px) and (max-width: 700px) {
+    .scrollTop {
+        right: 62px;
+    }
+}
